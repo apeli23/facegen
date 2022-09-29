@@ -55,7 +55,7 @@ export default function Home() {
         <div className="row">
             <div className="column">
                 <div className="status">
-                    Photo Link: <a href={link}>Use Link</a>
+                    Photo Link: {link ?  <a href={link}>Use Link</a> : "==>click 'upload' button to generate link..."}
                 </div>
                 <div className='result'  >
                     {image && <img id='photo' src={image} alt='AI Face' />}<br />
